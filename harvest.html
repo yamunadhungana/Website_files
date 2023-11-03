@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>W3.CSS Template</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.two-column-div {
+	content: "";
+    clear: both;
+	column-count: 2;
+}
+
+ .code-red {
+    color: red;
+  }
+
+.button {
+  border: none;
+  color: black;
+  padding: 3px 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #4CAF50;
+}
+
+.grid-container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-container2 {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.98);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid-item2 {
+  border: 1px solid rgba(0, 0, 0, 0.98);
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+
+
+
+
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/myimage.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Menu</b></h4>
+    </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>LATEST POST</a>
+	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-mortar-board w3-margin-right"></i>EDUCATION</a> 
+	<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+	
+
+ </div> 
+  <div class="w3-panel w3-large">
+	<a href=https://stackoverflow.com/users/11456863/yamuna-dhungana target=_blank rel=noopener aria-label=stack-overflow><i class="fa fa-stack-overflow w3-hover-opacity"></i>
+	<a href=https://github.com/yamunadhungana target=_blank rel=noopener aria-label=github><i class="fa fa-github w3-hover-opacity"></i>
+	<a href=https://www.linkedin.com/in/yamuna-dhungana-97677b145/ target=_blank rel=noopener aria-label=Linkedin><i class="fa fa-linkedin w3-hover-opacity"></i>
+				
+	</div> 
+   
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+	<!-- Header -->
+    <header>
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" 
+				class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+	  		<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+				<i class="fa fa-bars"></i></span>
+	  		<div class="w3-container">
+				
+
+	  		<div class="w3-section w3-bottombar w3-padding-16">
+				<span class="w3-margin-right">Filter:</span> 
+				<button class="w3-button w3-black">ALL</button>
+				
+				<a href="#Course_work"><button  class="w3-button w3-white w3-hide-small" onclick="w3_close()">
+					<i class="fa fa-diamond w3-margin-right" class="w3-margin-right"> ARCHIVE PROJECTS</i></a>
+
+				<a href="#slides"><button  class="w3-button w3-white w3-hide-small" onclick="w3_close()">
+					<i class="fa fa-file-powerpoint-o w3-margin-right" class="w3-margin-right"> SLIDES</i></a>
+
+				<a href="#interest"><button  class="w3-button w3-white w3-hide-small" onclick="w3_close()">
+					<i class="fa fa-book w3-margin-right" class="w3-margin-right"> INTEREST</i></a>
+						
+				<a href="#skills"><button  class="w3-button w3-white w3-hide-small" onclick="w3_close()">
+					<i class="fa fas fa-wrench w3-margin-right" class="w3-margin-right"> SKILLS</i></a>
+
+				<a href="#resume"><button  class="w3-button w3-white w3-hide-small" onclick="w3_close()">
+					<i class="fa fa-file-text w3-margin-right" class="w3-margin-right"> RESUME</i></a>
+	
+						  
+		
+	  </div>
+	</header>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+				<!-- Main -->
+					<div id="main" class = "grid-container" >
+						<div class ="grid-item">
+						
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="w3-center">
+									<h2 class="w3-center">Subdivide the field into a grid so that we could plan an on-farm experiment to compare two different agronomic practices</h2></span>
+									</nav><p style="text-align: left;">In order to conduct a comprehensive on-farm experiment and effectively
+                                         compare two different agronomic practices, we were given access to yield monitor data collected from 
+                                         previous harvest years for crops such as corn, soybeans, and wheat. The data was meticulously collected
+                                        by continuously sampling the grain every second as it passed through the combine. Each sample was then
+                                        tagged with a GPS coordinate to precisely pinpoint its location in the field, and the estimated yield
+                                        was measured in bushels per acre.<br>
+                                        <br>
+                                        We received multiple datasets representing various harvests from the same field. To simplify our analysis, 
+                                        we trimmed the data to a uniform square of 600 by 400 meters and converted the original GPS coordinates to 
+                                        metric units.<br>
+                                        <br>
+                                        Our primary objective is to partition the field into a grid system to effectively plan and execute our on-farm
+                                         experiment while comparing the two agronomic practices. By achieving this objective, we aim to gain valuable 
+                                         insights into the effects of different agronomic practices on crop yields and optimize future crop management
+                                        strategies.<br>
+                                        
+                          </p>
+                  </header>
+                </article>
+     <!-- Contact -->
+     <div class="w3-row-padding w3-padding-16" id="contact">
+		     
+        <div class="w3-container w3-padding-large" style="margin-bottom:32px" class ="grid-container">
+            <footer id="footer"><div class = "grid-item2"><div class = "two-column-div">
+           <section>
+             <h3>Have a Feedback? </h3>
+               <form method="post" action="#">
+                 <div class="fields">
+                   <div class="field">
+                     <label for="name">Name:</label><br>
+                     <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="field">
+                     <label for="email">Email: </label><br>
+                     <input type="text" name="email" id="email" />
+                   </div>
+                   <div class="field">
+                     <label for="message">Message</label><br>
+                     <textarea name="message" id="message" rows="1"></textarea>
+                   </div>
+                 </div>
+                  <ul class="actions">
+                <input type="submit" value="Send Message" />
+                  </ul>
+               </form>
+             </section>
+             <section class="split contact">
+               <section class="alt">
+             <h3>Address</h3>
+             <p>Memphis Tennessee</p>
+           </section>
+           
+           <section>
+             <h3>Email</h3>
+             <p><a href="#">dhunganayamuna7@outlook.com</a></p>
+           </section>
+ 
+           <section>
+             <h3>Follow me </h3>
+             <p><a href="#">Linkedin</a></p>
+           </section>
+           
+         </footer>
+         
+       </div>
+         
+ 
+       <!-- Copyright -->
+           <div id="copyright">
+             <ul>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a><br><a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></ul>
+             
+           </div>
+ 
+       </div>
+ 
+     
+     </div>
+ 
+     <!-- Scripts -->
+       <script src="assets/js/jquery.min.js"></script>
+       <script src="assets/js/jquery.scrollex.min.js"></script>
+       <script src="assets/js/jquery.scrolly.min.js"></script>
+       <script src="assets/js/browser.min.js"></script>
+       <script src="assets/js/breakpoints.min.js"></script>
+       <script src="assets/js/util.js"></script>
+       <script src="assets/js/main.js"></script>
+</div>
+ 
+</body>
+</html>

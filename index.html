@@ -1,0 +1,513 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>W3.CSS Template</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.two-column-div {
+	content: "";
+    clear: both;
+	column-count: 2;
+}
+
+.button {
+  border: none;
+  color: black;
+  padding: 3px 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #4CAF50;
+}
+
+.grid-container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-container2 {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.98);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid-item2 {
+  border: 1px solid rgba(0, 0, 0, 0.98);
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+
+
+
+
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/myimage.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Menu</b></h4>
+    </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>LATEST POST</a>
+	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-mortar-board w3-margin-right"></i>EDUCATION</a> 
+	<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+	
+
+ </div> 
+   <div class="w3-panel w3-large">
+	<a href=https://stackoverflow.com/users/11456863/yamuna-dhungana target=_blank rel=noopener aria-label=stack-overflow><i class="fa fa-stack-overflow w3-hover-opacity"></i>
+	<a href=https://github.com/yamunadhungana target=_blank rel=noopener aria-label=github><i class="fa fa-github w3-hover-opacity"></i>
+	<a href=https://www.linkedin.com/in/yamuna-dhungana-97677b145/ target=_blank rel=noopener aria-label=Linkedin><i class="fa fa-linkedin w3-hover-opacity"></i>
+				
+	</div> 
+   
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+	<!-- Header -->
+		<header id="portfolio">
+	  		<a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" 
+				class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+	  		<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+				<i class="fa fa-bars"></i></span>
+	  		<div class="w3-container">
+	  		<h1><b>Welcome to My Portfolio</b></h1>
+			<p><b> Data Scientist with a solid foundation in statistics and engineering, I am a data analyst who is driven 
+				to apply predictive modeling, data processing, and data mining algorithms to tackle intricate 
+				problems. My skill set encompasses mastery of diverse programming languages and tools, 
+				including R, Python, SAAS, as well as database management and visualization tools such as 
+				MySQL, SQLite, Microsoft Excel, Power BI, and Tableau. Moreover, I have worked with Java 
+				Ado.net and C sharp, which are prevalent in developing data-centric applications.</b></p>
+
+				
+
+	  		<div class="w3-section w3-bottombar w3-padding-16">
+				<span class="w3-margin-right">Filter:</span> 
+				<button class="w3-button w3-black">ALL</button>
+				
+				<a href="#Course_work"><button  class="w3-button w3-white w3-hide-small" onclick="w3_close()">
+					<i class="fa fa-diamond w3-margin-right" class="w3-margin-right"> ARCHIVE PROJECTS</i></a>
+
+				<a href="#slides"><button  class="w3-button w3-white w3-hide-small" onclick="w3_close()">
+					<i class="fa fa-file-powerpoint-o w3-margin-right" class="w3-margin-right"> SLIDES</i></a>
+
+				<a href="#interest"><button  class="w3-button w3-white w3-hide-small" onclick="w3_close()">
+					<i class="fa fa-book w3-margin-right" class="w3-margin-right"> INTEREST</i></a>
+						
+				<a href="#skills"><button  class="w3-button w3-white w3-hide-small" onclick="w3_close()">
+					<i class="fa fas fa-wrench w3-margin-right" class="w3-margin-right"> SKILLS</i></a>
+
+				<a href="#resume"><button  class="w3-button w3-white w3-hide-small" onclick="w3_close()">
+					<i class="fa fa-file-text w3-margin-right" class="w3-margin-right"> RESUME</i></a>
+	
+						  
+		
+	   		</div>
+	</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+				<!-- Main -->
+					<div id="main" class = "grid-container" >
+						<div class ="grid-item">
+						
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="w3-center">
+									<h1 class="w3-center"> Data Science Projects </h1></span>
+									<header>										
+										<h2><a href="#">Semi-supervised learning approach to predict dry beans.</a></h2>
+									</header>							
+									
+								</header>
+								<a href="#" class="image main"><img src="images/beansss.jpg" style="width:70%;height:85%"; alt="" /></a>
+								<p> The goal of this project is to create an automated method that can improve the declining market value of dry beans by 
+									using population cultivation data from a single farm to predict the value of the harvest when presented at market</p>
+								<ul class="w3-center">
+									<a><button onclick="window.open('bean.html')">View Project</button></a>
+								</ul>
+								
+								
+							</article>
+
+						<!-- Posts -->
+							<section class="posts"><div class = "two-column-div"> <div class="w3-center">
+								<article >									
+									<header>
+										 <h2><a href="#">Analysis of  Microtus data</a></h2>
+									</header>
+									<br style="clear:both;"/>
+									<a href="#" class="image fit"><img src="images/Microtus.png"; alt="" /></a>
+									<p>Supervised learning approach implemented to predict the species based on chromosome data of voles.</p>
+									<ul class="actions special">
+										<a href="https://github.com/yamunadhungana/My_projects/blob/main/final_601.rmd.pdf" class="button">VIEW PROJECT</a>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">Determining the relationship<br />
+										between the ink pens</a></h2>
+									</header>
+									
+									<a href="#" class="image fit"><img src="images/inkpp.png" style="width:85%;height:65%"; alt="" /></a>
+									<p>The data is taken from "The evidential value of micro spectrophotometry measurements
+										made for pen inks", by Martyna et al. (2013). The point of interest in our project is to find the relationship between the samples of data taken from the diffent ink pens</p>
+									<ul class="actions special">
+										<a href="https://github.com/yamunadhungana/My_projects/blob/main/inkpen.pdf" class="button">VIEW PROJECT</a>
+									</ul>
+								</article>
+								<article>
+									<header>										
+										<h2><a href="#">Death by disease and non disease in three decade</a></h2>
+									</header>
+
+									<a href="#" class="image fit"><img src="images/pic04.jpg" style="width:85%;height:65%"; alt="" /></a>
+									<p>In the period between 1990 and 2020 many people died by disease and non disease. This project includes the visualization of death by disease and non disease between the first class country like USA and third class country Nepal.</p>
+									<ul class="actions special">
+										<a href="https://public.tableau.com/app/profile/yamuna.dhungana6255/viz/Deathbydiseaseandnon-disease/Dashboard1?publish=yes" class="button">VIEW PROJECT</a>
+									</ul>
+								</article>
+								<article>
+									<header>										
+											<h2><a href="#">Calculate the Yeild of field</a></h2>
+										</header>
+										<a href="#" class="image main"><img src="images/field-corn.webp" style="width:70%;height:85%"; alt="" /></a>
+								<p>Our primary goal is to partition the field into a grid to facilitate planning an on-farm experiment for comparing 
+									two distinct agronomic practices and determining the field's yield..</p>
+								<ul class="w3-center">
+									<a><button onclick="window.open('harvest.html')">View Project</button></a>
+								</article>
+								<article>
+									<header>
+										
+										<h2><a href="#">Odio magna<br />
+										sed consectetur</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<a href="#" class="button">VIEW PROJECT</a>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2><a href="#">Augue lorem<br />
+										primis vestibulum</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<a href="#" class="button">VIEW PROJECT</a>
+									</ul>
+								</article>
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="#" class="page active">1</a>
+									<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">Next</a>
+								</div>
+							</footer>
+						</div>
+
+					</div>
+        <!-- About -->
+		  <div class="w3-row-padding w3-padding-16" id="about">
+		  </div>	
+		  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+			   <h3><b>ABOUT ME</b></h3>
+			   <p>Data analyst with strong statistic and engineering background. Eager to
+				assist with predictive modeling, data processing, and data mining
+				algorithms to solve challenging problems.Proficient in R, Python, SAAS and
+				database management and visualization tools such as mysql, SQLite,
+				Microsoft Excel,power BI and Tableau.
+			    </p>
+		    </div>
+			  
+
+		<!-- Education -->
+
+		    <div class="w3-row-padding w3-padding-16" id="education">	
+			</div>		
+			<div class="w3-container w3-padding-large" style="margin-bottom:32px">				
+		
+			    <h3><b><div class=section-subheading>EDUCATION</b></h3>
+				<i class="w3-bar-item w3-button w3-padding"></i>
+				<h4><p class="fa fa-mortar-board w3-margin-right" class=course> MS in Data Analytics</p></h4>
+				<a href="https://dsu.edu/" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"> Dakota States University, Madison, South Dakota</a>
+												
+
+				<i class="fa-li fas fa-graduation-cap"></i>
+				<div class=description>
+				<h4><p class="fa fa-mortar-board w3-margin-right" class=course>Bachelor in Biomedical Engineering</p></h4>
+				<a href="https://www.biomedical.edu.np/" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">College of Biomedical Engineering and Applied Sciences, Kathmandu Nepal</a>
+				
+
+				<i class="fa-li fas fa-graduation-cap"></i>
+				<div class=description>
+				<h4><p class="fa fa-mortar-board w3-margin-right"class=course> School</p></h4>
+				<a href="http://www.bethelschool.edu.np/" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Bethel English Boarding School, Palpa Nepal</a>
+				
+			</div>
+
+		<!-- Slides -->
+			<div class="w3-row-padding w3-padding-16" id="slides"> 
+        	</div>
+        	<div class="w3-container w3-padding-large" style="margin-bottom:32px">
+
+	    	    <h3><b>SLIDES</b></h3>
+				<p>Undergraduate Project</p>
+				<iframe src="https://onedrive.live.com/embed?cid=84EB452E5AA6C292&resid=84EB452E5AA6C292%21132&authkey=AObHqmzU29ZjWK8&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe>
+				<p>Bean Prediction</p>
+				<iframe src="https://onedrive.live.com/embed?cid=84EB452E5AA6C292&resid=84EB452E5AA6C292%21133&authkey=AOyYxDSyoz9Ik-4&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe>
+	    	</div>
+
+
+		<!-- Interest -->
+		
+			<div class="w3-row-padding w3-padding-16" id="interest">
+			
+			<div class="w3-container w3-padding-large" style="margin-bottom:32px">
+				<div class ="grid-item1">
+
+				<h3><b>INTERESTS</b></h3>
+				<li>Machine Learning </li>
+				<li>Pedictive Analysis </li>
+				<li>Deep Learning </li>
+				<li>Big Data </li>
+				<li>Data Analysis and Visualization </li>
+				<li>R and Python </li>
+				</ul>
+			</div>
+			
+
+		<!-- Skills -->
+		<header class="w3-center">
+			<h3><b>SKILLS </b></h3>
+		</header>
+			<div class="w3-row-padding w3-padding-16" id="skills" class = "grid-container2" >
+				<div class ="grid-item1"><div class = "two-column-div">
+        	   	
+			
+				<br style="clear:both;"/>						
+				<b><u> Data Science:</u></b>
+				<li>Data Mining </li>
+				<li>Data Warehousing </li>
+				<li>Data Modeling </li>
+				<li>Deep Learning </li>
+				<li>Predictive Modeling </li>
+				<li>Data Visualization </li>
+				<li> Business Intelligence </li>
+				<li> Statistical Analysis </li>
+				<li> Advanced Microsoft Excel </li>
+							
+			<b><u>Core skills:</u></b>
+				<li> Statistical Analysis </li>
+				<li>Machine learning models</li>
+				<li>Large scale data processing </li>
+				<li> optimization methods </li>	
+				
+			<b><u>Core Programming Skill :</u></b>
+					<p> R,Python, MYSQL, Hadoop, Tableau </p>
+			<b><u> Programming/tools: </u></b>
+					<p> R, Python,SAS, Hadoop, MySQL, SQLite,SQL, Tableau, Power BI, Hive,Kafka, Spark, HDFS</p>
+			
+
+		  	</div>
+			
+		     	
+
+		<!-- Resume -->
+			<div class="w3-row-padding w3-padding-16" id="resume"> 
+        	<div class="w3-container w3-padding-large" style="margin-bottom:32px">
+
+	    		<h3><b>RESUME</b></h3>
+	    		<p>My <a href="https://github.com/yamunadhungana/data/blob/master/CV_Dhungana_yamuna.pdf">Resume</a>.</p>
+		
+			</div>
+
+		<!--Course work-->
+		<div class="w3-row-padding w3-padding-16" id="Course_work"> 
+        	<div class="w3-container w3-padding-large" style="margin-bottom:32px">
+				
+				<header>
+					<h2><b>Archive Projects</b></h2>
+				</header>
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/final_601.rmd.pdf">Analysis of  Microtus data </a></b></li>
+					<p>Certain set of our data is classified by its species with a detailed explanation of the chromosome data. Whereas the remaining
+						sets of data are yet to identify its species. Hence, the main objective of our final project is to predict the species of the unknown group.
+					</p>
+
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/inkpen.pdf">Determining the relationship between the ink pens.</a></b></li>
+					<p>The data is taken from "The evidential value of micro spectrophotometry measurements made for pen inks", by Martyna et al. (2013).
+						The point of interest in our project is to find the relationship between the samples of data taken from the diffent ink pens
+					</p>
+					
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT601_1.rmd.pdf">Data analysis using graphs.</a></b></li>
+					<p>Data is analysed using graphs for the exercise of the handbook of stastical analysis using R (HSAUR).
+					</p>
+
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/inkpen.pdf">Data Analysys using HSAUR</a></b></li>
+					<p>Data is analysed using graphs for the exercise of the handbook of stastical analysis using R (HSAUR).</p>
+
+
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT601.3.rmd.pdf">Analysis of Bladder Cancer from HSAUR3</a></b></li>
+					<p>The dataset bladder cancer from HSAUR3 and Default from ISLR is used for the analysis of these datasets using R.</p>
+
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/Dhungana.Yamuna_4..pdf">Unsupervised learning exercise from HSAUR</a></b></li>
+					<p>Unsupervised learning with The dataset Galaxies from Mass package, birth death rates from HSAUR3, Schizophrenia data from HSAUR3</p>
+					
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT601_5.rmd.pdf">Regression Trees with HSAUR</a></b></li>
+					<p>Regression trees with the dataset Boston Housing of mlbeach package</p>
+
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT601_6.rmd.pdf">Analysing Longitudinal Data from HSAUR</a></b></li>
+					<p>Analysing the bodyfat, GlaucomaM data from TH.data Package</p>
+
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT601_7.rmd.pdf">Survival Analysis from HSAUR</a></b></li>
+					<p>Analysing the breast cancer, and cancer from survival Package</p>
+
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/Homework_8.pdf">Multi linear regression from HSAUR</a></b></li>
+					<p>Analysing bodyfat from Th.data package</p>
+
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT601_9.rmd.pdf">Multi linear regression from HSAUR3</a></b></li>
+					<p>Analysing cloud data from HSAUR3</p>
+
+
+					<b><p>It covered conceptual questions as well as the statitistical and machine learning problems from the book ISLR.</a></p>
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT602_1.rmd.pdf">Conceptual question from An Introduction to statistical Learning</a></b></li>
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/Yamuna.Dhungana_2.pdf">Exercise from ISLR-2</a></b></li>
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT602_3.pdf">Exercise from ISLR-3</a></b></li>
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT602_4.pdf">Exercise from ISLR-4</a></b></li>
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT602_5.pdf">Exercise from ISLR-5</a></b></li>
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT602_6.pdf">Exercise from ISLR-6</a></b></li>
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT602_7.pdf">Exercise from ISLR-7</a></b></li>
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT602_8.pdf">Exercise from ISLR-8</a></b></li>
+					<li><b><a href="https://github.com/yamunadhungana/My_projects/blob/main/STAT602_11.pdf">Exercise from ISLR-11</a></b></li>
+					
+					
+
+
+
+
+
+			</div>
+			
+		
+					
+		<!-- Contact -->
+		     <div class="w3-row-padding w3-padding-16" id="contact">
+		     
+			 <div class="w3-container w3-padding-large" style="margin-bottom:32px" class ="grid-container">
+			     <footer id="footer"><div class = "grid-item2"><div class = "two-column-div">
+					<section>
+						<h3>Have a Feedback? </h3>
+					    <form method="post" action="#">
+						    <div class="fields">
+							    <div class="field">
+								    <label for="name">Name:</label><br>
+								    <input type="text" name="name" id="name" />
+							     </div>
+							     <div class="field">
+								    <label for="email">Email: </label><br>
+								    <input type="text" name="email" id="email" />
+							    </div>
+							    <div class="field">
+								    <label for="message">Message</label><br>
+								    <textarea name="message" id="message" rows="1"></textarea>
+							    </div>
+						    </div>
+						     <ul class="actions">
+							 <input type="submit" value="Send Message" />
+						     </ul>
+					    </form>
+				    </section>
+				    <section class="split contact">
+					    <section class="alt">
+						<h3>Address</h3>
+						<p>Memphis Tennessee</p>
+					</section>
+					
+					<section>
+						<h3>Email</h3>
+						<p><a href="#">dhunganayamuna7@outlook.com</a></p>
+					</section>
+
+					<section>
+						<h3>Follow me </h3>
+						<p><a href="#">Linkedin</a></p>
+					</section>
+					
+				</footer>
+				
+			</div>
+				
+
+			<!-- Copyright -->
+					<div id="copyright">
+						<ul>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a><br><a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></ul>
+						
+					</div>
+
+			</div>
+
+		
+    </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
